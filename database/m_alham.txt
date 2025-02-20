@@ -1,0 +1,25 @@
+1.CREATE DATAABSE inventory_mochamadalham_xi4
+
+2.CREATE TABLE barang 
+(id_barang int (20)PRIMARY key,
+nama_barang varchar (20),
+id_jenis int (20),
+harga varchar (20),
+stok varchar (20))
+
+3.CREATE TABLE jenis 
+(id_jenis int (20)PRIMARY key,
+nama_jenis varchar (20))
+
+4.INSERT into barang VALUES
+(2,'sepatu',9,'10000','4')
+INSERT into barang VALUES
+(3,'sendal',8,'1000','15')
+
+5.INSERT into jenis VALUES
+(9,'sepatulari'),
+(8,'swalow')
+
+6.ALTER TABLE barang ADD FOREIGN KEY (id_jenis) REFERENCES jenis (id_jenis)
+on DELETE CASCADE
+on UPDATE CASCADE
